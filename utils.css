@@ -1,0 +1,26 @@
+.m-arrange {
+    margin: 5px 15px 5px 15px;
+}
+
+.label-style {
+    font-size: 22px;
+}
+
+.select-style {
+    height: 30px;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+.input-style {
+    width: 150px;
+    font-size: large;
+    text-align: center;
+    border-radius: 8px;
+    border: 2px solid black;
+    height: 40px;
+}
+
+button {
+    cursor: pointer;
+}

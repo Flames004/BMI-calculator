@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utils.css">
+    <title>BMI Calculator</title>
+</head>
+
+<body>
+    <h1>Check your BMI</h1>
+    <div class="container">
+
+        <!-- User Input Section -->
+        <div class="user-input">
+
+            <div class="height">
+                <span class="h-label m-arrange label-style">
+                    <h3>Height</h3>
+                </span>
+                <div class="h-units m-arrange">
+                    <select id="h-units-select" class="select-style">
+                        <option>Centimeters</option>
+                        <option>Meters</option>
+                        <option>Feet</option>
+                        <option>Inches</option>
+                    </select>
+                </div>
+                <input id="hInput" class="m-arrange input-style" type="number" placeholder="Height">
+            </div>
+            <div class="weight">
+                <span class="w-label m-arrange label-style">
+                    <h3>Weight</h3>
+                </span>
+                <div class="w-units m-arrange">
+                    <select id="w-units-select" class="select-style">
+                        <option>Kilograms</option>
+                        <option>Pounds</option>
+                    </select>
+                </div>
+                <input id="wInput" class="m-arrange input-style" type="number" placeholder="Weight">
+            </div>
+            <div class="check">
+                <button id="check-btn" onclick="putBMI()">Check</button>
+            </div>
+        </div>
+
+        <!-- Result Section -->
+        <div class="result">
+
+            <div class="bmi-result">
+                <span id="bmi-value">28.8</span>
+                <div class="bmi-text">
+                    <span class="bmi-label">BMI</span>
+                    <span id="status">Normal</span>
+                </div>
+            </div>
+            <div class="break-line"></div>
+            <div class="bmi-info">
+                <h3>Information</h3>
+                <div class="info-label">
+                    <span>Under Weight</span>
+                    <span>Normal</span>
+                    <span>Over Weight</span>
+                </div>
+                <div class="info-bar">
+                    <div id="bmi-uw"></div>
+                    <div id="bmi-normal"></div>
+                    <div id="bmi-ow"></div>
+                </div>
+                <div class="bar-value">
+                    <ul>
+                        <li>16.0</li>
+                        <li>18.5</li>
+                        <li>25.0</li>
+                        <li>40.0</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="back">
+                <button id="back-btn" onclick="backtoInput()">Back</button>
+            </div>
+            <div class="credit">
+                <span>&copy;2023 | Provided by Deepak Shukla</span>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
