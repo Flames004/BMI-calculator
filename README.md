@@ -1,6 +1,6 @@
 # BMI Calculator
 
-[![BMI Calculator](assets/Sgvp_Web43.jpg)](https://score-board-lets-play.netlify.app/)
+[![BMI Calculator](assets/Sgvp_Web43.jpg)](https://bmi-calculator-healthy.netlify.app/)
 
 A simple BMI (Body Mass Index) calculator web application built using HTML, CSS, and JavaScript.
 
@@ -9,7 +9,8 @@ A simple BMI (Body Mass Index) calculator web application built using HTML, CSS,
 - [Description](#description)
 - [About BMI](#about-bmi)
 - [Demo](#demo)
-- [Features](#features)<!-- - [Screenshots](#screenshots) -->
+- [Features](#features)
+- [Screenshots](#screenshots)
 - [How to Use](#how-to-use)
 - [Contributing](#contributing)
 - [License](#license)
@@ -42,7 +43,7 @@ For more accurate health assessments and personalized advice, it is always recom
 
 ## Demo
 
-You can try out the BMI Calculator live on [GitHub Pages](https://your-username.github.io/bmi-calculator) or see the [demo video](https://example.com/bmi-calculator-demo) for a quick overview.
+You can try out the BMI Calculator live on [BMI Calculator](https://bmi-calculator-healthy.netlify.app/)
 
 ## Features
 
@@ -65,17 +66,17 @@ The available units include:
       Kilograms (kg)
       Pounds (lbs)
 
-<!-- ## Screenshots
+## Screenshots
 
-![BMI Calculator Screenshot](screenshots/bmi_calculator_screenshot.png) -->
+<img align="left" alt="Screenshot 1" width="300" src="assets/SS1.png"><img alt="Screenshot 2" width="300" src="assets/SS2.png">
 
 ## How to Use
 
-1. Open the BMI Calculator web application in your web browser.
+1. Start the BMI Calculator web application in your web browser by opening the `index.html` file.
 
-2. Enter your height in centimeters or feet/inches and your weight in kilograms or pounds.
+2. Enter your height in centimeters or multiple inputs provided and your weight in kilograms or pounds.
 
-3. The BMI will be automatically calculated and displayed, along with the corresponding BMI category.
+3. The BMI will be automatically calculated and displayed when you click on the 'Check' button, along with the corresponding BMI category.
 
 ## Contributing
 
