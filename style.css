@@ -1,57 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Roboto+Slab:wght@100;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau+Office:wght@300&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html {
+    height: 100vh;
+    width: 100vw;
+    scroll-behavior: smooth;
 }
 
 body {
-    background: #161414;
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    background-color: #f7b42c;
+    background-image: linear-gradient(315deg, #f7b42c 0%, #fc575e 74%);
 }
 
 h1 {
+    font-weight: bolder;
+    /* font-family: 'Raleway', sans-serif; */
+    font-family: 'Ysabeau SC', sans-serif;
+    font-size: 50px;
     color: white;
-    margin-bottom: 40px;
+    width: fit-content;
+    margin: max(80px, 5%) auto;
 }
 
 .container {
+    box-shadow: 2px 2px 15px 2px #000;
+    margin-inline: auto;
     position: relative;
-    width: 450px;
+    width: min(450px, 60%);
     height: 300px;
+    border-radius: 15px;
+    /* border: 2px solid hotpink */
 }
 
 
 /* For User Input */
 .user-input {
+    border-radius: 15px;
     position: absolute;
     z-index: 2;
     height: 100%;
     width: 100%;
-    background: white;
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
+    flex-direction: column;
+    gap: 3rem;
+    /* background: linear-gradient(-45deg, rgb(252, 82, 16), rgb(227, 15, 255)); */
+    /* background-color: #1fd1f9;
+    background-image: linear-gradient(315deg, #1fd1f9 0%, #b621fe 74%); */
+    background-color: #abe9cd;
+    background-image: linear-gradient(315deg, #abe9cd 0%, #3eadcf 74%);
 }
 
 .height,
 .weight {
-    height: 70px;
+    /* border: 1px solid lightgreen; */
+    height: 50px;
     width: 100%;
-    margin-bottom: 30px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
 
 .check {
-    width: 90px;
-    height: 45px;
+    margin-inline: auto;
+    width: min(80px, 18%);
+    height: 40px;
 }
 
 #check-btn {
@@ -60,38 +82,42 @@ h1 {
     height: 100%;
     width: 100%;
     border: none;
-    background: orange;
+    background-color: #f5d020;
+    background-image: linear-gradient(-180deg, #f5d020 0%, #f53803 74%);
+    /* background: orange; */
     color: black;
 }
 
 
-
 /* For Results */
 .result {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    border-radius: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
-    z-index: 1;
-    height: 100%;
-    width: 100%;
-    background: rgb(223, 224, 134);
-    position: absolute;
+    justify-content: space-between;
+    /* background-color: #fad0c4;
+    background-image: linear-gradient(315deg, #fad0c4 0%, #f1a7f1 74%); */
+    background-color: #f3e6e8;
+    background-image: linear-gradient(315deg, #f3e6e8 0%, #d5d0e5 74%);
 }
 
 .bmi-result {
-    width: 90%;
+    width: max(50%, 230px);
     display: flex;
     justify-content: center;
 }
 
 #bmi-value {
-    width: 110px;
-    font-size: 60px;
+    width: 70%;
+    font-size: 4.8rem;
 }
 
 .bmi-text {
-    margin-left: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -103,37 +129,32 @@ h1 {
 }
 
 #status {
-    font-size: 15px;
+    font-size: 18px;
     color: green;
 }
 
-.break-line {
-    height: 4px;
-    width: 90%;
-    background: #000;
-}
-
 .bmi-info {
-    margin-top: 5px;
-    padding: 10px 0 10px 0;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.158);
     display: flex;
     width: 90%;
-    height: 110px;
+    height: 38%;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .bmi-info h3 {
-    position: relative;
-    bottom: 10px;
+    font-size: x-large;
+    margin-bottom: 10px;
 }
 
 .info-label {
-    width: 85%;
-    display: flex;
-    justify-content: space-between;
+    width: 90%;
+}
+
+.info-label li {
+    margin: 0 15px;
 }
 
 .info-bar {
@@ -170,13 +191,15 @@ ul {
 }
 
 li {
-    margin: 0px 8px 0px 8px;
+    font-family: 'Edu SA Beginner', cursive;
+    margin: 0 8px;
+    font-size: large;
     list-style: none;
 }
 
 .back {
-    margin-top: 10px;
-    width: 80px;
+    margin-inline: auto;
+    width: min(80px, 18%);
     height: 40px;
 }
 
@@ -186,10 +209,20 @@ li {
     height: 100%;
     width: 100%;
     border: none;
-    background: orange;
+    background-color: #f5d020;
+    background-image: linear-gradient(-180deg, #f5d020 0%, #f53803 74%);
+    /* background: orange; */
     color: black;
 }
 
+.credit {
+    margin-bottom: 5px;
+}
+
 .credit span {
+    font-family: 'Ysabeau Office', sans-serif;
     font-size: small;
+}
+.credit span i{
+    color: red;
 }

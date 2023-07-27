@@ -1,26 +1,47 @@
-.m-arrange {
-    margin: 5px 15px 5px 15px;
-}
-
-.label-style {
-    font-size: 22px;
+.label-style h3{
+    font-size: 25px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
 }
 
 .select-style {
-    height: 30px;
-    border-radius: 10px;
-    border: 2px solid black;
+    font-size: 15px;
+    padding: 5px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.158);
+    border: none;
 }
 
 .input-style {
-    width: 150px;
+    background: rgba(255, 255, 255, 0.808);
+    width: 10rem;
     font-size: large;
     text-align: center;
-    border-radius: 8px;
-    border: 2px solid black;
-    height: 40px;
+    outline: none;
+    border: none;
+    font-family: 'Roboto Slab', serif;
+    height: 35px;
 }
 
 button {
     cursor: pointer;
+}
+
+
+/* Reamoving the spin buttons (arrow buttons) from input type: number */
+/* Chrome, Safari, Edge, Opera */
+.height input::-webkit-outer-spin-button,
+.height input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.weight input::-webkit-outer-spin-button,
+.weight input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+::placeholder{
+    color: rgba(0, 0, 0, 0.781);
 }
