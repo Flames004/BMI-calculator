@@ -23,12 +23,14 @@ body {
 
 h1 {
     font-weight: bolder;
-    /* font-family: 'Raleway', sans-serif; */
     font-family: 'Ysabeau SC', sans-serif;
     font-size: 50px;
     color: white;
     width: fit-content;
     margin: max(80px, 5%) auto;
+}
+h1 span{
+    font-family: 'Ysabeau SC', sans-serif;
 }
 
 .container {
@@ -191,6 +193,8 @@ ul {
 }
 
 li {
+    display: flex;
+    align-items: center;
     font-family: 'Edu SA Beginner', cursive;
     margin: 0 8px;
     font-size: large;

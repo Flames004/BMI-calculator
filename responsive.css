@@ -1,3 +1,85 @@
-@media only screen and (max-width: 500px){
-    
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap');
+@media only screen and (max-width: 600px){
+    h1{
+        font-size: 15vw;
+        padding: 0 10%;
+    }
+    .container{
+        width: min(550px, 90%);
+        height: 500px;
+    }
+
+    /* User Input */
+    .height, .weight{
+        flex-wrap: wrap;
+    }
+    .label-style h3{
+        font-size: 9vw;
+    }
+    .select-style{
+        font-size: 5vw;
+    }
+    .input-style{
+        margin-top: 15px;
+        width: 80%;
+        height: 60px;
+        font-size: 5.5vw;
+    }
+    .user-input{
+        justify-content: space-around;
+    }
+    .check{
+        width: min(100px, 20%);
+        height: 60px;
+    }
+    #check-btn{
+        font-size: x-large;
+    }
+
+    /* Result */
+    .result{
+        justify-content: space-around;
+    }
+    .bmi-result{
+        width: 80%;
+    }
+    #bmi-value{
+        font-size: 5.7rem;
+    }
+    .bmi-label{
+        font-size: 3.1rem;
+    }
+    #status{
+        font-size: 1.5rem;
+    }
+    .bmi-info{
+        height: 35%;
+    }
+    .bmi-info h3{
+        font-size: 1.8rem;
+    }
+    .info-label li{
+        margin: 0 20px;
+    }
+    .info-bar div{
+        height: 7px;
+    }
+    li{
+        font-weight: bold;
+        font-size: larger;
+        margin: 0 10px;
+    }
+    .back{
+        width: min(100px, 20%);
+        height: 60px;
+    }
+    #back-btn{
+        font-size: x-large;
+    }
+    .credit{
+        margin: 0;
+    }
+    .credit span{
+        font-size: medium;
+    }
 }
