@@ -29,7 +29,7 @@
         justify-content: space-around;
     }
     .check{
-        width: min(100px, 20%);
+        width: min(100px, 30%);
         height: 60px;
     }
     #check-btn{
@@ -70,7 +70,7 @@
         margin: 0 10px;
     }
     .back{
-        width: min(100px, 20%);
+        width: min(100px, 30%);
         height: 60px;
     }
     #back-btn{
